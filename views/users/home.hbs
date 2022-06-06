@@ -1,0 +1,54 @@
+<section class="container-fluid" style="width: 100%; height: auto;">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+         
+            <div class="carousel-item active">
+                <img src="/product-images/{{banner.[2].name}}" class="d-block w-100" alt="...">
+            </div>
+      
+           
+         {{#each banner}}
+            <div class="carousel-item ">
+                <img src="/product-images/{{this.name}}" class="d-block w-100" alt="...">
+            </div>
+       
+         {{/each }}
+
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+                
+        </div>
+
+</section>
+<section >
+
+    <div class="container"  id="image">
+      
+
+   <a href="/products"> <img class="img-fluid" src="/images/boxer-Section-desktop-View.jpg" alt=""></a>
+  <a href="/products"> <img class="img-fluid" src="/images/Full-Sleeve-Section-desktop-View.jpg" alt=""></a>
+  <a href="/products"> <img  class="img-fluid"src="/images/Graphic-Section-desktop-View (1).jpg" alt=""></a>
+  <a href="/products"> <img class="img-fluid" src="/images/new1-shirt-Section-desktop-View.jpg" alt=""></a>
+  <a href="/products"> <img class="img-fluid" src="/images/polo-Section-desktop-View.jpg" alt=""></a>
+
+
+    </div>
+</section>
+<style>
+    #image{
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+</style>
