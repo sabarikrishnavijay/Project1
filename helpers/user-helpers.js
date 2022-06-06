@@ -716,7 +716,7 @@ module.exports = {
         return new Promise(async (resolve, reject) => {
             let order= await db.get().collection(collection.ORDER_COLLETION).findOne({ _id: ObjectId(data.id) })
             console.log(order.status);
-            if(order.status=='Pending'){
+            if(order.status=='Pending'||order.paymentMethod=='COD'){
                 await db.get().collection(collection.ORDER_COLLETION).updateOne({ _id: ObjectId(data.id) }, {
                     $set: {
                         status: "cancelled"
